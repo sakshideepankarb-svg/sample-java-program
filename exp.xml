@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DevOps Training Welcome</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .welcome {
+        background: rgba(0,0,0,0.3);
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        font-size: 2.5em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome">Welcome to DevOps Training</div>
+  </body>
+</html>
