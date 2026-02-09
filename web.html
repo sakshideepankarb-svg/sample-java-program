@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alphabet Animation</title>
+    <style>
+        body {
+            background: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #letter {
+            font-size: 8em;
+            color: #2a4d69;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="letter"></div>
+    <script>
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+        let idx = 0;
+        const letterDiv = document.getElementById('letter');
+        function showNextLetter() {
+            if (idx < letters.length) {
+                letterDiv.style.opacity = 0;
+                setTimeout(() => {
+                    letterDiv.textContent = letters[idx++];
+                    letterDiv.style.opacity = 1;
+                }, 200);
+                setTimeout(showNextLetter, 700);
+            }
+        }
+        showNextLetter();
+    </script>
+</body>
+</html>
